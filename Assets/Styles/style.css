@@ -45,6 +45,151 @@ main .banner{
     background-color: #000;
 }
 
+.intro-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.intro-header{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.intro{
+    max-width: 900px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 36px;
+}
+
+.mission-cont, .vision-cont{
+    background-color: #fff;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.vision-cont{
+    padding-top: 0;
+}
+
+.mission-header, .vision-header{
+    font-size: 30px;
+}
+
+.mission, .vision{
+    font-size: 20px;
+    max-width:1200px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 36px;
+}
+
+.side-img, .side-img-1, .side-img-2{
+    width: 200px;
+}
+
+.side-img-1{
+    margin-top: -60px;
+}
+
+.side-img-2{
+    margin-bottom: -60px;
+}
+
+.mission-cont .left, .vision-cont .right{
+    width: 800px;
+    display: flex;
+    gap: 10px;
+}
+
+.vision-cont .right{
+    justify-content: right;
+}
+
+.features-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.features-header{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.feature{
+    background-color: red;
+    width: 220px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.folklore{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Home/fulbanga.jpg');
+    background-position: left;
+}
+
+.traditionfestival{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Home/festival.jpeg');
+    background-position: center;
+}
+
+.delicacies{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Home/delicacies.jpg');
+    background-position: right;
+}
+
+.historicalsites{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Home/simbahan.jpg');
+    background-position: center;
+}
+
+@media(max-width: 1130px){
+    .features{
+        grid-template-columns: 280px 280px;
+    }
+}
+
+@media(max-width: 1024px){
+    .side-img, .side-img-1, .side-img-2{
+        width: 160px;
+        margin: 0;
+    }
+    .mission-cont, .vision-cont{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 @media(max-width: 768px){
     main .banner{
         background-position: bottom;
@@ -62,6 +207,26 @@ main .banner{
         font-size: 18px;
         border: solid 4px #fff;
     }
+    .intro-header, .mission-header, .vision-header{
+        font-size: 24px;
+    }
+    .intro, .mission, .vision{
+        font-size: 16px;
+    }
+    .mission-cont .left, .vision-cont .right{
+        display: none;
+    }
+    .mission-cont, .vision-cont{
+        text-align: center;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .features-header{
+        font-size: 30px;
+    }
+    .feature p{
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 600px){
@@ -73,11 +238,29 @@ main .banner{
     }
 }
 
+@media(max-width: 562px){
+    .features{
+        grid-template-columns: 210px 210px;
+        row-gap: 30px;
+    }
+    .feature{
+        width: 190px;
+        height: 280px;
+    }
+}
+
 @media(max-width: 425px){
     main .banner{
         background-position: bottom;
     }
     .heading{
         font-size: 34px;
+    }
+    .features{
+        grid-template-columns: 280px;
+    }
+    .feature{
+        width: 220px;
+        height: 300px;
     }
 }

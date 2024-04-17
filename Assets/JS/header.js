@@ -4,8 +4,3 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     backdrop.classList.toggle("active");
 });
-
-profile.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    backdrop.classList.toggle("active");
-});

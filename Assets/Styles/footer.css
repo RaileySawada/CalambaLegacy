@@ -2,7 +2,7 @@ footer{
     background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Footer/footer-bg.jpg');
     background-size: cover;
     background-position: center;
-    margin-top: 200px;
+    margin-top: auto;
     padding: 40px 60px;
 }
 
