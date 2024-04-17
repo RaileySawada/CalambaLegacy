@@ -38,13 +38,17 @@ main .banner{
     background-color: #ffffff00;
     margin-top: 60px;
     cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
-.explore:hover{
+.explore-btn:hover{
     background-color: #000;
 }
 
 @media(max-width: 768px){
+    main .banner{
+        background-position: bottom;
+    }
     .headings{
         bottom: 40px;
     }
@@ -62,11 +66,17 @@ main .banner{
 
 @media(max-width: 600px){
     .headings{
-        bottom: 30px;
+        bottom: 60px;
+    }
+    .explore-btn{
+        margin-top: 50px;
     }
 }
 
 @media(max-width: 425px){
+    main .banner{
+        background-position: bottom;
+    }
     .heading{
         font-size: 34px;
     }
