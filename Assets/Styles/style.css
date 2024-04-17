@@ -1,0 +1,72 @@
+section{
+    height: 100vh;
+    margin-top: 50px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Home/rizal-home.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    color: #fff;
+    font-size: 54px;
+    position: absolute;
+    bottom: 250px;
+    right: 0;
+    left: 0;
+}
+
+.sub-heading{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    left: 0;
+}
+
+.explore-btn{
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 14px 0;
+    border: solid 5px #fff;
+    width: 240px;
+    position: relative;
+    bottom: -560px;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.explore:hover{
+    background-color: #000;
+}
+
+@media(max-width: 768px){
+    .heading{
+        font-size: 40px;
+        bottom: 200px;
+    }
+    .sub-heading{
+        font-size: 16px;
+        bottom: 170px;
+    }
+    .explore-btn{
+        font-size: 18px;
+        width: 180px;
+        border: solid 4px #fff;
+        bottom: -580px;
+    }
+}
+
+@media(max-width: 600px){
+    .sub-heading{
+        bottom: 140px;
+    }
+    .explore-btn{
+        bottom: -600px;
+    }
+}

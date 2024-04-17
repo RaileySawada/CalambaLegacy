@@ -1,0 +1,48 @@
+footer{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Images/Footer/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 200px;
+    padding: 40px 60px;
+}
+
+footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 80px));
+    gap: 3rem;
+    justify-content: center;
+}
+
+footer .box-container .box h4{
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+footer .box-container .box a{
+    color: #d5d5d5;
+    font-size: 16px;
+    padding-bottom: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+footer .box-container .box a i{
+    color: #ffffff;
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+footer .box-container .box a:hover i{
+    padding-right: 1.2rem;
+}
+
+@media(max-width: 712px){
+    footer{
+        padding-left: 40px;
+    }
+
+    footer .box-container{
+        justify-content: left;
+    }
+}
