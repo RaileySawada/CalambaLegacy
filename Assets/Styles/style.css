@@ -148,6 +148,11 @@ main .banner{
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.feature:hover{
+    transform: scale(1.1);
 }
 
 .feature a{
