@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1px;
+    align-items: center;
+}
+
+main .container{
+    background-color: red;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    text-decoration: none;
+    background-size: 1800px 1200px;
+    background-position: center;
+    transition: all .5s ease-in-out;
+}
+
+main .container:hover{
+    background-position: right;
+}
+
+main .container p{
+    font-size: 40px;
+    font-weight: 700;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.container.folklore{
+    background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.95), rgba(0,0,0,0.8)), url(../Images/Explore/folklore.jpg);
+}
+
+.container.traditionfestival{
+    background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.95), rgba(0,0,0,0.8)), url(../Images/Explore/traditionfestival.jpeg);
+}
+
+.container.delicacies{
+    background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.95), rgba(0,0,0,0.8)), url(../Images/Explore/delicacies.jpg);
+    background-position: center top;
+}
+.container.delicacies:hover{
+    background-position: top right;
+}
+
+.container.historicalsites{
+    background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.95), rgba(0,0,0,0.8)), url(../Images/Explore/historicalsites.jpg);
+}
+
+@media(max-width: 1024px){
+    main .container{
+        padding: 0 40px;
+    }
+}
+
+@media(max-width: 768px){
+    main .container{
+        padding: 0 10px;
+        background-size: 1200px 800px;
+    }
+    main .container p{
+        font-size: 30px;
+        margin-left: 60px;
+        word-spacing: 6px;
+    }
+}
+
+@media(max-width: 500px){
+    main .container{
+        padding: 0;
+        background-size: 1000px 700px;
+    }
+    main .container p{
+        font-size: 24px;
+        font-weight: 600;
+        margin-left: 30px;
+    }
+}
