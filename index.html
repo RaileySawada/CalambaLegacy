@@ -12,12 +12,11 @@
         <link rel="stylesheet" href="Assets/Styles/footer.css">
     </head>
     <body>
-        <header>
+        <header class="home-header">
             <a href="index.html" class="logo"><img src="Assets/Images/Logo.png" alt="LagunaLegacy Logo"></a>
-            <a href="index.html" class="title">Calamba Legacy</a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="Assets/Pages/Explore.html">Explore</a></li>
                     <li><a href="Assets/Pages/AboutUs.html">About Us</a></li>
                 </ul>
@@ -28,7 +27,7 @@
                 </div>
             </nav>
         </header>
-        
+        <hr class="line">
         <main>
             <Section class="banner">
                 <div class="headings">
@@ -121,4 +120,12 @@
     </body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="Assets/JS/header.js"></script>
+    <script>
+        let hr = document.querySelector(".line");
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector(".home-header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+            hr.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </html>

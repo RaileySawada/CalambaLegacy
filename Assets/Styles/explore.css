@@ -65,6 +65,7 @@ main .container p{
 @media(max-width: 768px){
     main .container{
         padding: 0 10px;
+        background-size: 1200px 800px;
     }
     main .container p{
         font-size: 30px;
@@ -76,6 +77,7 @@ main .container p{
 @media(max-width: 500px){
     main .container{
         padding: 0;
+        background-size: 1000px 700px;
     }
     main .container p{
         font-size: 24px;
