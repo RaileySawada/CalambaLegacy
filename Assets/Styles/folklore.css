@@ -1,11 +1,248 @@
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 100px;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
-main div{
+.head-section h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 10px 0;
+}
+
+.head-section p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0 80px 30px 80px;
+}
+
+.head-section{
+    width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px 6px #00000005;
+    border: 2px solid #000;
+}
+
+.category-btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 920px 260px;
+    margin-top: 40px;
+    column-gap: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #05b94a;
+    margin-left: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.side-panel{
+    position: sticky;
+    top: 80px;
+    height: 80vh;
+    overflow: auto;
+}
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.side-panel .story{
+    width: 220px;
+    height: 160px;
+    margin: auto, 20px;
+    background-size: 230px 160px;
+    background-position: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.story p{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 120px;
+}
+
+.calamba{
+    margin-top: 20px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/AlamatngCalamba.jpg);
+}
+
+.pansol{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/AlamatngPansol.jpg);
+}
+
+.urbanLegend{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/rizal-hitler.png);
+    margin-bottom: 20px;
+}
+
+.side-panel .story:hover{
+    background-size: 270px 190px;
+}
+
+.story-cont, .side-panel{
+    background-color: #fff;
+    box-shadow: 0 1px 5px 6px #00000005;
+    border: 2px solid #000;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.story-img{
+    width: 700px;
     height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px 2px #0000000c;
+    border: 2px solid #0000001f;
+}
+
+.story-cont h1{
+    font-size: 30px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+}
+
+.story-cont p{
+    margin: 0 60px 60px 60px;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+}
+
+@media(max-width: 1250px){
+    .head-section{
+        width: 960px;
+    }
+    .container{
+        grid-template-columns: 740px 200px;
+    }
+    .side-panel .story{
+        width: 180px;
+        height: 100px;
+    }
+    .story p{
+        margin-top: 70px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 990px){
+    .head-section{
+        width: 700px;
+    }
+    .container{
+        grid-template-columns: 520px 160px;
+    }
+    .side-panel .story{
+        width: 170px;
+        height: 100px;
+    }
+    .side-panel .story{
+        width: 140px;
+        height: 100px;
+    }
+    .story-img{
+        width: 480px;
+        height: 300px;
+    }
+    .story-cont h1{
+        font-size: 20px;
+    }
+    .story-cont p{
+        font-size: 14px;
+    }
+    .story p{
+        font-size: 14px;
+    }
+    .head-section h1{
+        font-size: 30px;
+    }
+    .head-section p{
+        font-size: 16px;
+        margin: 0 20px 30px 20px;
+    }
+}
+
+@media(max-width: 715px){
+    .head-section{
+        width: 600px;
+    }
+    .side-panel{
+        display: none;
+    }
+    .container{
+        grid-template-columns: 600px;
+    }
+    .category-btn{
+        display: inline-block;
+    }
+}
+
+@media(max-width: 625px){
+    .head-section{
+        width: 100%;
+        border: none;
+        margin-top: -20px;
+    }
+    .container{
+        display: block;
+        width: 100%;
+    }
+    .story-cont{
+        border: none;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 510px){
+    .categories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .story-img{
+        width: 380px;
+        height: 220px;
+    }
+}
+
+@media(max-width: 425px){
+    .story-img{
+        width: 280px;
+        height: 150px;
+    }
+    .story-cont p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }

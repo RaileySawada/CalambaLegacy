@@ -4,7 +4,7 @@
 }
 
 main{
-    margin: 50px 0 0 0;
+    margin: 60px 0 0 0;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(17rem, 1fr));
     gap: 1px;
@@ -56,6 +56,13 @@ main .container p{
     background-image: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.95), rgba(0,0,0,0.8)), url(../Images/Explore/historicalsites.jpg);
 }
 
+@media(min-width: 1530px){
+    main .container{
+        background-size: 2800px 2000px;
+        transition: all 1s ease-in-out;
+    }
+}
+
 @media(max-width: 1024px){
     main .container{
         padding: 0 40px;
@@ -65,7 +72,7 @@ main .container p{
 @media(max-width: 768px){
     main .container{
         padding: 0 10px;
-        background-size: 1200px 800px;
+        background-size: 1200px 900px;
     }
     main .container p{
         font-size: 30px;
@@ -77,7 +84,7 @@ main .container p{
 @media(max-width: 500px){
     main .container{
         padding: 0;
-        background-size: 1000px 700px;
+        background-size: 900px 700px;
     }
     main .container p{
         font-size: 24px;
