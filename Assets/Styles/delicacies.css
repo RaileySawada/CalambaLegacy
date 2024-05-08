@@ -122,13 +122,38 @@ main{
     transition: all .3s ease-in-out;
 }
 
-.buhayani{
-    margin-top: 20px;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/buhayani.jpeg);
+.side-panel .content:hover{
+    background-size: 270px 190px;
 }
 
-.patron{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/SanIsidroLabradorFeast.jpg);
+.bukopie{
+    margin-top: 20px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.espasol{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.kesongputi{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.puto{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.monaybae{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.bibingkamakapuno{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+}
+
+.uraro{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    margin-bottom: 20px;
 }
 
 .content p{

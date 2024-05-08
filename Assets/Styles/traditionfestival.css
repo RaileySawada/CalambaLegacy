@@ -122,6 +122,10 @@ main{
     transition: all .3s ease-in-out;
 }
 
+.side-panel .content:hover{
+    background-size: 270px 190px;
+}
+
 .buhayani{
     margin-top: 20px;
     background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images/Explore/buhayani.jpeg);
