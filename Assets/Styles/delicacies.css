@@ -74,8 +74,8 @@ main{
     text-align: center;
 }
 
-.content-div p{
-    margin: 0 60px 60px 60px;
+.content-div p, .ingredients p{
+    margin: 0 60px 40px 60px;
     letter-spacing: .5px;
     word-spacing: 1px;
 }
@@ -88,6 +88,43 @@ main{
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+}
+
+.ingredients{
+    width: 100%;
+}
+.ingredients p, .procedures p{
+    font-weight: 600;
+}
+.ingredients ul, .procedures ol{
+    margin: -30px 70px 40px 80px;
+}
+.ingredients ul li, .procedures ol li{
+    letter-spacing: .5px;
+    word-spacing: 1px;
+}
+.location{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.location ul{
+    list-style: none;
+    margin: 0 60px 10px 60px;
+}
+.location a{
+    text-decoration: none;
+    color: #000;
+}
+.location i{
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+}
+.location a:hover i{
+    margin-right: 20px;
+}
+.location p{
+    font-weight: 600;
+    margin: 40px 60px 10px 60px;
 }
 
 .side-panel{
@@ -128,31 +165,31 @@ main{
 
 .bukopie{
     margin-top: 20px;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://almostnordic.com/wp-content/uploads/2022/08/buko-pie-recipe.jpg);
 }
 
 .espasol{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://i2.wp.com/www.angsarap.net/wp-content/uploads/2012/11/espasol.jpg?fit=1080%2C720&ssl=1);
 }
 
 .kesongputi{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://cdn.tasteatlas.com/images/ingredients/f316efe579d14a58917c74f57710a9c5.jpg);
 }
 
 .puto{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://themayakitchen.com/wp-content/uploads/2020/11/Putong_Puti-2.jpg);
 }
 
 .monaybae{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://www.camella.com.ph/wp-content/uploads/2022/09/Monay-Bae-in-Laguna-Photo-from-Team-Bequette-via-YouTube-edited.jpg);
 }
 
 .bibingkamakapuno{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://th.bing.com/th/id/R.996cc146a204fff71fec739f03e0501e?rik=ZYdjv%2ffCH23YBg&riu=http%3a%2f%2fphilnews.ph%2fwp-content%2fuploads%2f2022%2f10%2fbibingka-with-macapuno.jpg&ehk=Dtx0bLetpF%2befHAgn3Rd3Jbe%2bp6VriGGFPMsgZdLy%2f8%3d&risl=&pid=ImgRaw&r=0);
 }
 
 .uraro{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(../Images);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(https://cdn.tasteatlas.com/images/dishes/2e3116b52517458aa4eeeea1027eabb0.jpg);
     margin-bottom: 20px;
 }
 
@@ -201,7 +238,7 @@ main{
     .content-div h1{
         font-size: 20px;
     }
-    .content-div p{
+    .content-div p, .ingredients ul li, .procedures ol li, .location a{
         font-size: 14px;
     }
     .content p{
@@ -233,7 +270,9 @@ main{
         margin-left: 20px;
     }
     .category-btn-cont{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -263,8 +302,7 @@ main{
         display: none;
     }
     .category-btn-cont{
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr 1fr;
     }
     .category-btn{
         margin-top: 30px;
@@ -283,5 +321,8 @@ main{
     .content-div p{
         margin-left: 40px;
         margin-right: 40px;
+    }
+    .ingredients ul, .procedures ol, .location ul{
+        margin-left: 54px;
     }
 }
