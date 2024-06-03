@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="Assets/Styles/style.css">
         <link rel="stylesheet" href="Assets/Styles/header.css">
         <link rel="stylesheet" href="Assets/Styles/footer.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <header class="home-header">
@@ -127,5 +128,7 @@
             header.classList.toggle("sticky", window.scrollY > 0);
             hr.classList.toggle("sticky", window.scrollY > 0);
         });
+        ScrollReveal().reveal('.banner');
+        ScrollReveal().reveal('.intro-cont, .mission-cont, .vision-cont, .features-cont', {delay: 300});
     </script>
 </html>
