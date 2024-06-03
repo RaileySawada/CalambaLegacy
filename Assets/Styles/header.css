@@ -204,7 +204,7 @@ nav ul li a.active::after{
         right: -120%;
         text-align: center;
         transition: all .3s ease-in-out;
-        padding-top: 50px;
+        padding: 50px 20px 0 0;
     }
     nav ul li{
         display: block;
