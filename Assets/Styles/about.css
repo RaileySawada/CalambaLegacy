@@ -16,6 +16,13 @@ main{
     margin-bottom: 130px;
 }
 
+.ourStory, .missionVision{
+    padding: 0 80px;
+}
+.ourStory h1{
+    font-size: 26px;
+}
+
 .about-header{
     font-size: 50px;
 }
@@ -24,14 +31,19 @@ hr{
     width: 300px;
     size: 4px;
     border: 3px solid #2a8d4b;
+    border-radius: 10px;
     margin-bottom: 40px;
 }
 
-.about{
+.about, .mission, .vision{
     word-spacing: 4px;
     letter-spacing: 1px;
     font-size: 20px;
-    width: 70%;
+}
+
+.team-header{
+    text-align: center;
+    font-size: 50px;
 }
 
 .team{
@@ -77,14 +89,20 @@ hr{
 }
 
 @media(max-width: 768px){
-    .about-header{
+    .about-header, .team-header{
         font-size: 34px;
     }
     hr{
         width: 240px;
     }
-    .about{
+    .ourStory h1, .missionVision h1{
+        font-size: 20px;
+    }
+    .about, .mission, .vision{
         font-size: 16px;
+    }
+    .ourStory, .missionVision{
+        padding: 0 40px;
     }
     .members-cont{
         grid-template-columns: 1fr 1fr;
@@ -102,6 +120,12 @@ hr{
     
     .role{
         font-size: 14px;
+    }
+}
+
+@media(max-width: 425px){
+    .ourStory, .missionVision{
+        padding: 0 20px;
     }
 }
 
