@@ -262,7 +262,7 @@ main{
         height: 220px;
     }
     .map{
-        width: 300px;
+        width: 90%;
         height: 250px;
     }
 }
@@ -273,7 +273,6 @@ main{
         height: 150px;
     }
     .map{
-        width: 260px;
         height: 200px;
     }
     .story-cont p{
