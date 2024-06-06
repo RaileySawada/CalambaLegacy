@@ -75,7 +75,7 @@ main{
 }
 
 .content-div p{
-    margin: 0 60px 60px 60px;
+    margin: 0 60px 40px 60px;
     letter-spacing: .5px;
     word-spacing: 1px;
 }
@@ -141,6 +141,19 @@ main{
     margin-top: 120px;
 }
 
+.vid{
+    width: 700px;
+    height: 400px;
+}
+.source-cont{
+    margin-bottom: 60px;
+}
+.source-cont a, .source-cont p{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
 @media(max-width: 1250px){
     .head-section{
         width: 960px;
@@ -173,7 +186,7 @@ main{
         width: 140px;
         height: 100px;
     }
-    .content-img{
+    .content-img, .vid{
         width: 480px;
         height: 300px;
     }
@@ -248,14 +261,14 @@ main{
     .category-btn{
         margin-top: 30px;
     }
-    .content-img{
+    .content-img, .vid{
         width: 380px;
         height: 220px;
     }
 }
 
 @media(max-width: 425px){
-    .content-img{
+    .content-img, .vid{
         width: 280px;
         height: 150px;
     }

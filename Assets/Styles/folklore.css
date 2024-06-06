@@ -141,9 +141,16 @@ main{
 }
 
 .story-cont p{
-    margin: 0 60px 60px 60px;
+    margin: 0 60px 40px 60px;
     letter-spacing: .5px;
     word-spacing: 1px;
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+    border: solid 1px #000;
+    margin-bottom: 60px;
 }
 
 @media(max-width: 1250px){
@@ -181,6 +188,10 @@ main{
     .story-img{
         width: 480px;
         height: 300px;
+    }
+    .map{
+        width: 400px;
+        height: 350px;
     }
     .story-cont h1{
         font-size: 20px;
@@ -250,12 +261,20 @@ main{
         width: 380px;
         height: 220px;
     }
+    .map{
+        width: 300px;
+        height: 250px;
+    }
 }
 
 @media(max-width: 425px){
     .story-img{
         width: 280px;
         height: 150px;
+    }
+    .map{
+        width: 260px;
+        height: 200px;
     }
     .story-cont p{
         margin-left: 40px;
