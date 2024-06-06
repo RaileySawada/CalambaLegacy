@@ -144,6 +144,7 @@ main{
 .vid{
     width: 700px;
     height: 400px;
+    margin-bottom: 60px;
 }
 .source-cont{
     margin-bottom: 60px;
