@@ -262,16 +262,23 @@ main{
     .category-btn{
         margin-top: 30px;
     }
-    .content-img, .vid{
+    .content-img{
         width: 380px;
+        height: 220px;
+    }
+    .vid{
+        width: 90%;
         height: 220px;
     }
 }
 
 @media(max-width: 425px){
-    .content-img, .vid{
+    .content-img{
         width: 280px;
         height: 150px;
+    }
+    .vid{
+        height: 190px;
     }
     .content-div p{
         margin-left: 40px;
